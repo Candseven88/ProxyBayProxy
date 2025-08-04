@@ -2,43 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://proxybayproxy.online/</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2025-01-01</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://proxybayproxy.online/setup</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2025-01-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://proxybayproxy.online/submit</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2025-01-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://proxybayproxy.online/blog</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://proxybayproxy.online/blog/</loc>
+        <lastmod>2025-01-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://proxybayproxy.online/blog/best-piratebay-proxies</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://proxybayproxy.online/blog/best-piratebay-proxies.html</loc>
+        <lastmod>2025-01-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://proxybayproxy.online/blog/unblock-piratebay</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://proxybayproxy.online/blog/unblock-piratebay.html</loc>
+        <lastmod>2025-01-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://proxybayproxy.online/blog/piratebay-mirror-sites</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://proxybayproxy.online/blog/piratebay-mirror-sites.html</loc>
+        <lastmod>2025-01-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
