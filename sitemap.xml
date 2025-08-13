@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://proxybayproxy.online/</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-08-13</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://proxybayproxy.online/setup</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-08-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://proxybayproxy.online/submit</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-08-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -44,7 +44,19 @@
     </url>
     <url>
         <loc>https://proxybayproxy.online/piratebay-proxies.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-08-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://proxybayproxy.online/1337x-piratebay-proxies.html</loc>
+        <lastmod>2025-08-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://proxybayproxy.online/1337x-proxies.html</loc>
+        <lastmod>2025-08-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
