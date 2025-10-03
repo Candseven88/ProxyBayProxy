@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Proxy - 1337x & PirateBay Proxy</title>
+    <meta name="description" content="Submit a new 1337x or PirateBay proxy site to our database. Help others access 1337x and The Pirate Bay by sharing working proxy servers.">
+    <meta name="keywords" content="Submit 1337x Proxy, Add 1337x Mirror, 1337x Proxy Submission, Submit PirateBay Proxy, Add PirateBay Mirror">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Submit Proxy - 1337x & PirateBay Proxy">
+    <meta property="og:description" content="Submit a new 1337x or PirateBay proxy site to our database. Help others access 1337x and The Pirate Bay by sharing working proxy servers.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://proxybayproxy.online/submit.html">
+    <link rel="canonical" href="https://proxybayproxy.online/submit.html">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WQTXR5T5BG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WQTXR5T5BG');
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "sp4q4n8h3c");
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#1F2937'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 桌面端导航链接样式 */
+        .nav-link {
+            @apply relative px-6 py-3 text-gray-600 hover:text-blue-600 font-medium transition-all duration-300 ease-in-out cursor-pointer;
+        }
+        .nav-text {
+            @apply relative z-10;
+        }
+        .nav-indicator {
+            @apply absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-300 ease-in-out rounded-full;
+        }
+        .nav-link:hover .nav-indicator {
+            @apply w-full;
+        }
+        .nav-link.active {
+            @apply text-blue-600;
+        }
+        .nav-link.active .nav-indicator {
+            @apply w-full;
+        }
+        
+        /* 确保悬停效果在所有状态下都工作 */
+        .nav-link:hover {
+            @apply text-blue-600;
+        }
+        .nav-link:hover .nav-indicator {
+            @apply w-full;
+        }
+        
+        /* 添加更强的悬停效果 */
+        .nav-link {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #3B82F6, #8B5CF6);
+            transition: width 0.3s ease-in-out;
+            border-radius: 1px;
+        }
+        
+        .nav-link:hover::before {
+            width: 100%;
+        }
+        
+        /* 移动端导航链接样式 */
+        .mobile-nav-link {
+            @apply flex items-center px-4 py-3 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium;
+        }
+        .mobile-nav-link.active {
+            @apply text-blue-600 bg-blue-50;
+        }
+        
+        .logo {
+            @apply text-2xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent;
+        }
+        
+        /* 导航栏背景效果 */
+        .nav-backdrop {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg border-b border-gray-100 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <div class="logo text-2xl font-bold">ProxyBayProxy</div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <button class="nav-link group" onclick="loadPage('home')">
+                        <span class="nav-text" data-i18n="nav_home">Home</span>
+                        <span class="nav-indicator"></span>
+                    </button>
+                    <button class="nav-link group" onclick="loadPage('setup')">
+                        <span class="nav-text" data-i18n="nav_setup">Setup</span>
+                        <span class="nav-indicator"></span>
+                    </button>
+                    <button class="nav-link active group" onclick="loadPage('submit')">
+                        <span class="nav-text" data-i18n="nav_submit">Submit</span>
+                        <span class="nav-indicator"></span>
+                    </button>
+                    <a href="blog/index.html" class="nav-link group">
+                        <span class="nav-text" data-i18n="nav_blog">Blog</span>
+                        <span class="nav-indicator"></span>
+                    </a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="p-2 rounded-lg text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-all duration-200">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-6">
+                <div class="flex flex-col space-y-3 pt-4 border-t border-gray-100">
+                    <button class="mobile-nav-link" onclick="loadPage('home')">
+                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                        </svg>
+                        <span data-i18n="nav_home">Home</span>
+                    </button>
+                    <button class="mobile-nav-link" onclick="loadPage('setup')">
+                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        <span data-i18n="nav_setup">Setup</span>
+                    </button>
+                    <button class="mobile-nav-link active" onclick="loadPage('submit')">
+                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                        </svg>
+                        <span data-i18n="nav_submit">Submit</span>
+                    </button>
+                    <a href="blog/index.html" class="mobile-nav-link">
+                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
+                        </svg>
+                        <span data-i18n="nav_blog">Blog</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Page Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4" data-i18n="submit_title">Submit a 1337x or PirateBay Proxy</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-i18n="submit_subtitle">
+                Help the community by submitting working 1337x or PirateBay proxy sites. Your contribution helps others access 1337x and The Pirate Bay.
+            </p>
+        </div>
+
+        <!-- Submission Form -->
+        <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8 mb-10">
+            <form id="proxy-submission-form" class="space-y-6">
+                <div>
+                    <label for="proxy-url" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="form_site_url">Proxy URL</label>
+                    <div class="mt-1">
+                        <input type="url" name="proxy-url" id="proxy-url" required 
+                               class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md p-3 border" 
+                               placeholder="https://example-proxy.com" data-i18n="form_site_url">
+                    </div>
+                    <p class="mt-1 text-sm text-gray-500">Enter the full URL including http:// or https://</p>
+                </div>
+                
+                <div>
+                    <label for="site-type" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="form_site_type">Site Type</label>
+                    <div class="mt-1">
+                        <select id="site-type" name="site-type" required
+                                class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md p-3 border">
+                            <option value="" disabled selected>Select site</option>
+                            <option value="1337x">1337x</option>
+                            <option value="piratebay">The Pirate Bay</option>
+                            <option value="other">Other Torrent Site</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="proxy-country" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="form_country">Server Location</label>
+                    <div class="mt-1">
+                        <select id="proxy-country" name="proxy-country" required
+                                class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md p-3 border">
+                            <option value="" disabled selected>Select country</option>
+                            <option value="us">United States</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="ca">Canada</option>
+                            <option value="nl">Netherlands</option>
+                            <option value="de">Germany</option>
+                            <option value="fr">France</option>
+                            <option value="se">Sweden</option>
+                            <option value="ch">Switzerland</option>
+                            <option value="ru">Russia</option>
+                            <option value="sg">Singapore</option>
+                            <option value="jp">Japan</option>
+                            <option value="au">Australia</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="proxy-type" class="block text-sm font-medium text-gray-700 mb-1">Proxy Type</label>
+                    <div class="mt-1">
+                        <select id="proxy-type" name="proxy-type" required
+                                class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md p-3 border">
+                            <option value="" disabled selected>Select type</option>
+                            <option value="https">HTTPS Proxy</option>
+                            <option value="http">HTTP Proxy</option>
+                            <option value="mirror">Mirror Site</option>
+                            <option value="onion">Onion/Tor Site</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="proxy-description" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="form_notes">Additional Information (Optional)</label>
+                    <div class="mt-1">
+                        <textarea id="proxy-description" name="proxy-description" rows="3"
+                                  class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md p-3 border"
+                                  placeholder="Any additional details about this proxy site..." data-i18n="form_notes"></textarea>
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="submitter-email" class="block text-sm font-medium text-gray-700 mb-1">Your Email (Optional)</label>
+                    <div class="mt-1">
+                        <input type="email" name="submitter-email" id="submitter-email"
+                               class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md p-3 border"
+                               placeholder="your@email.com">
+                    </div>
+                    <p class="mt-1 text-sm text-gray-500">We'll only contact you if we need more information</p>
+                </div>
+                
+                <div class="pt-4">
+                    <button type="submit" id="submit-button"
+                            class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" data-i18n="form_submit">
+                        Submit Proxy
+                    </button>
+                </div>
+            </form>
+            
+            <!-- Success Message (Hidden by Default) -->
+            <div id="success-message" class="hidden mt-6 bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-md">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <svg class="h-5 w-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-sm font-medium">
+                            Thank you for your submission! We'll review the proxy site and add it to our list if it meets our criteria.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Error Message (Hidden by Default) -->
+            <div id="error-message" class="hidden mt-6 bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-md">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <svg class="h-5 w-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-sm font-medium">
+                            There was an error submitting your proxy. Please check your information and try again.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Submission Guidelines -->
+        <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Submission Guidelines</h2>
+            
+            <div class="space-y-6">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-8 w-8 rounded-full bg-blue-100 text-blue-600">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-medium text-gray-900">Verify Before Submitting</h3>
+                        <p class="mt-1 text-gray-600">
+                            Please test the proxy site before submitting to ensure it's working properly. Check that it correctly loads 1337x or The Pirate Bay content and allows searching.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-8 w-8 rounded-full bg-blue-100 text-blue-600">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-medium text-gray-900">Security Check</h3>
+                        <p class="mt-1 text-gray-600">
+                            We prefer HTTPS proxies for better security. Make sure the site doesn't contain malware, excessive ads, or require user registration.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-8 w-8 rounded-full bg-blue-100 text-blue-600">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-medium text-gray-900">Speed and Reliability</h3>
+                        <p class="mt-1 text-gray-600">
+                            Submit proxies that load quickly and are reliable. Slow or frequently down proxies may not be added to our list.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-8 w-8 rounded-full bg-blue-100 text-blue-600">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-medium text-gray-900">Unique Submissions</h3>
+                        <p class="mt-1 text-gray-600">
+                            Check our existing list before submitting to avoid duplicates. We appreciate new, working proxies that aren't already listed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="text-center">
+                <p class="text-gray-400">&copy; 2024 ProxyBayProxy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation functionality
+        function loadPage(page) {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+            
+            // Remove active class from all desktop links
+            navLinks.forEach(link => link.classList.remove('active'));
+            
+            // Remove active class from all mobile links
+            mobileNavLinks.forEach(link => link.classList.remove('active'));
+            
+            // Add active class to clicked link (desktop)
+            if (event.target.closest('.nav-link')) {
+                event.target.closest('.nav-link').classList.add('active');
+            }
+            
+            // Add active class to clicked link (mobile)
+            if (event.target.closest('.mobile-nav-link')) {
+                event.target.closest('.mobile-nav-link').classList.add('active');
+            }
+            
+            // Redirect to appropriate page
+            switch(page) {
+                case 'home':
+                    window.location.href = 'index.html';
+                    break;
+                case 'setup':
+                    window.location.href = 'setup.html';
+                    break;
+                case 'submit':
+                    window.location.href = 'submit.html';
+                    break;
+            }
+        }
+        
+        // Form submission handler
+        document.getElementById('proxy-submission-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // In a real implementation, you would send this data to your backend
+            // For now, we'll just show the success message
+            document.getElementById('success-message').classList.remove('hidden');
+            document.getElementById('error-message').classList.add('hidden');
+            
+            // Reset the form
+            this.reset();
+            
+            // Scroll to the success message
+            document.getElementById('success-message').scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+    <script src="assets/js/i18n.js"></script>
+</body>
+</html> 

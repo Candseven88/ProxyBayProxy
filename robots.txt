@@ -1,0 +1,68 @@
+# ProxyBayProxy Robots.txt
+# Domain: proxybayproxy.online
+# Last Updated: 2025-10-03
+
+# Allow all search engines and AI crawlers
+User-agent: *
+Allow: /
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# AI and LLM crawlers
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Disallow certain paths (if any)
+# User-agent: *
+# Disallow: /private/
+# Disallow: /admin/
+
+# Important files and resources
+Sitemap: https://proxybayproxy.online/sitemap.xml
+Sitemap: https://proxybayproxy.online/sitemap.xml
+
+# IndexNow key file for instant indexing
+# https://www.indexnow.org/
+Host: proxybayproxy.online
+
+# Additional metadata
+# Contact: admin@proxybayproxy.online
+# Preferred crawl time: 02:00-06:00 UTC 
