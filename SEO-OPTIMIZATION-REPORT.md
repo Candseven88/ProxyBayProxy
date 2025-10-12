@@ -2,7 +2,7 @@
 
 ## 项目概述
 - **域名**: proxybayproxy.online
-- **优化日期**: 2025-10-03
+- **优化日期**: 2025-10-12 (最新更新)
 - **优化目标**: 提升搜索引擎收录和排名，优化爬虫友好性
 
 ## 🚀 已完成的SEO优化
@@ -106,19 +106,54 @@
 1. **Silent Salt游戏网站** (silentsalt.site)
    - 锚文本: "Silent Salt Cookie Game"
    - 相关性: 娱乐内容，用户体验
+   - 状态: ✅ 已添加
 
 2. **Ghostface AI工具** (ghostfaceai.space)
    - 锚文本: "Ghostface AI Generator"
    - 相关性: AI工具，内容创作
+   - 状态: ✅ 已添加
 
 3. **AI Photo Editor** (aiphotoeditor.space)
    - 锚文本: "AI Photo Editor"
    - 相关性: 图像处理，创意工具
+   - 状态: ✅ 已添加
+
+4. **Demonfall游戏网站** (demonfall.xyz)
+   - 锚文本: "Demonfall Game"
+   - 相关性: Roblox游戏，Demon Slayer主题
+   - 状态: ✅ 新增 (2025-10-12)
+
+5. **Plants vs Brainrots游戏** (plantsvsbrainrots.website)
+   - 锚文本: "Plants vs Brainrots"
+   - 相关性: Roblox tycoon游戏，Plants vs Zombies风格
+   - 状态: ✅ 新增 (2025-10-12)
+
+6. **Weak Legacy 2游戏** (weaklegacy2.xyz)
+   - 锚文本: "Weak Legacy 2"
+   - 相关性: Roblox RPG游戏
+   - 状态: ✅ 新增 (2025-10-12)
+
+7. **Rabbit Road Art创意平台** (rabbitroad.art)
+   - 锚文本: "Rabbit Road Art"
+   - 相关性: 数字艺术和设计灵感
+   - 状态: ✅ 新增 (2025-10-12)
+
+8. **Queens Game游戏平台** (queensgame.games)
+   - 锚文本: "Queens Game"
+   - 相关性: 战略游戏和竞技体验
+   - 状态: ✅ 新增 (2025-10-12)
 
 ### 外链分布
-- 主页: 3个do-follow外链
-- 博客页面: 3个do-follow外链 + 内文链接
-- 代理指南页面: 3个do-follow外链
+- 主页 (index.html): 8个do-follow外链
+- 博客页面 (blog/index.html): 8个do-follow外链 + 内文链接
+- 代理指南页面 (piratebay-proxies.html): 8个do-follow外链
+- 总计: 24个高质量do-follow反链
+
+### 外链质量评估
+- **相关性**: 所有外链均为相关领域（游戏、工具、创意）
+- **权重传递**: 全部使用 `rel="dofollow"` 属性
+- **用户体验**: 提供真实价值的相关网站推荐
+- **多样性**: 涵盖游戏、AI工具、艺术创意等多个垂直领域
 
 ## 📈 预期SEO效果
 
@@ -181,4 +216,4 @@ node indexnow-submit.js https://proxybayproxy.online/new-page.html
 - 更新频率: 代理列表每日更新，指南每周更新
 
 ---
-*本报告生成于 2025-10-03，记录了ProxyBayProxy网站的完整SEO优化过程和成果。*
+*本报告生成于 2025-10-12，记录了ProxyBayProxy网站的完整SEO优化过程和成果。最新更新包含5个新增高质量dofollow反链。*
