@@ -34,6 +34,36 @@
         <mobile:mobile/>
     </url>
     
+    <!-- Legal and Info Pages -->
+    <url>
+        <loc>https://proxybayproxy.online/about.html</loc>
+        <lastmod>2025-10-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <mobile:mobile/>
+    </url>
+    <url>
+        <loc>https://proxybayproxy.online/contact.html</loc>
+        <lastmod>2025-10-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <mobile:mobile/>
+    </url>
+    <url>
+        <loc>https://proxybayproxy.online/privacy-policy.html</loc>
+        <lastmod>2025-10-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <mobile:mobile/>
+    </url>
+    <url>
+        <loc>https://proxybayproxy.online/terms-of-service.html</loc>
+        <lastmod>2025-10-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <mobile:mobile/>
+    </url>
+    
     <!-- Proxy Guide Pages -->
     <url>
         <loc>https://proxybayproxy.online/piratebay-proxies.html</loc>
@@ -93,5 +123,4 @@
         <priority>0.7</priority>
         <mobile:mobile/>
     </url>
-</urlset> 
 </urlset> 
